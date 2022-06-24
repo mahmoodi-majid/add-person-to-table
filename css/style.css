@@ -1,0 +1,36 @@
+input {
+    margin-bottom: 10px;
+    display: block;
+}
+
+th,td {
+
+    border: 3px solid green;
+    padding: 10px;
+    width: 400px;
+    
+}
+.table-div {
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column
+}
+
+table {
+    border-collapse: collapse;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    background-color: deepskyblue;
+    border: none;
+    border-radius: 20px;
+    transition: 2s all;
+}
+
+button:hover {
+    color: red;
+    background-color: black;
+}
