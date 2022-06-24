@@ -1,33 +1,3 @@
-//var buttonAdd = document.querySelector("#add").addEventListener("click", function () {
-//    addpersons()
-//})
-//
-//function addpersons() {
-//    var firstName = document.querySelector("#firstName").value;
-//    var lastName = document.querySelector("#lastName").value;
-//    var table = document.querySelector("#table");
-//    var person = document.createElement("tr");
-//    var fnCell = document.createElement("td");
-//    var lnCell = document.createElement("td");
-//    fnCell.textContent = firstName;
-//    lnCell.textContent = lastName;
-//    person.appendChild(fnCell);
-//    person.appendChild(lnCell);
-//    table.appendChild(person);
-//    
-//    fnCell = ""
-//    lnCell = ""
-//    console.log(table);
-//}
-// 
-
-
-
-
-
-
-
-
 
 var buttonadd = document.querySelector("#add").addEventListener("click", function () {
     addperson()
