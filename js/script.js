@@ -1,34 +1,3 @@
-//var buttonAdd = document.querySelector("#add").addEventListener("click", function () {
-//    addpersons()
-//})
-//
-//function addpersons() {
-//    var firstName = document.querySelector("#firstName").value;
-//    var lastName = document.querySelector("#lastName").value;
-//    var table = document.querySelector("#table");
-//    var person = document.createElement("tr");
-//    var fnCell = document.createElement("td");
-//    var lnCell = document.createElement("td");
-//    fnCell.textContent = firstName;
-//    lnCell.textContent = lastName;
-//    person.appendChild(fnCell);
-//    person.appendChild(lnCell);
-//    table.appendChild(person);
-//    
-//    fnCell = ""
-//    lnCell = ""
-//    console.log(table);
-//}
-// 
-
-
-
-
-
-
-
-
-
 var buttonadd = document.querySelector("#add").addEventListener("click", function () {
     addperson()
 })
@@ -40,12 +9,17 @@ function addperson() {
     var person = document.createElement("tr");
     var fnamecell = document.createElement("td");
     var lnamecell = document.createElement("td");
+    var operations = document.createElement("td");
+    var delettag = document.createElement("a");
+    delettag.textContent = "Delete"
+    delettag.href= "#";
     fnamecell.textContent = fname;
     lnamecell.textContent = lname;
     person.appendChild(fnamecell);
     person.appendChild(lnamecell);
+    operations.appendChild(delettag)
+    person.appendChild(operations)
     table.appendChild(person);
-
     console.log(table);
 
 }
