@@ -14,6 +14,10 @@ function addperson() {
     var delettag = document.createElement("a");
     delettag.textContent = "Delete"
     delettag.href = "#";
+    var edittag = document.createElement("a");
+    edittag.textContent = "Edit"
+    edittag.href = "#"
+    var textnode = document.createTextNode("  |  ")
     delettag.addEventListener("click", function () {
         deleteperson(person)
     })
@@ -22,6 +26,8 @@ function addperson() {
     person.appendChild(fnamecell);
     person.appendChild(lnamecell);
     operations.appendChild(delettag)
+    operations.appendChild(textnode)
+    operations.appendChild(edittag)
     person.appendChild(operations)
     table.appendChild(person);
     console.log(table);
