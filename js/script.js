@@ -36,7 +36,7 @@ function addperson(btn) {
         table.appendChild(person);
         console.log(table);
     } else {
-        
+
         editpersons.childNodes[0].textContent = fname;
         editpersons.childNodes[1].textContent = lname;
         editpersons.style.backgroundColor = "white";
@@ -49,11 +49,14 @@ function deleteperson(per) {
 
     table.removeChild(per);
 
-} 
+}
+
 function editperson(per) {
-    editpersons = per
-    document.querySelector("#add").textContent = "edit";
-    per.style.backgroundColor = "aqua";
-    var fname = document.querySelector("#firstName").value = per.childNodes[0].textContent;
-    var lname = document.querySelector("#lastName").value = per.childNodes[1].textContent;
+    if (document.querySelector("#add").textContent == "add") {
+        editpersons = per
+        document.querySelector("#add").textContent = "edit";
+        per.style.backgroundColor = "aqua";
+        var fname = document.querySelector("#firstName").value = per.childNodes[0].textContent;
+        var lname = document.querySelector("#lastName").value = per.childNodes[1].textContent;
+    }
 }
